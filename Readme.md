@@ -28,7 +28,7 @@ clone the repository
 ```
 
 ```
-    make run
+    LISTEN_ADDR=<> make run
 ```
 
 ## Deploy onto a docker cotainer
@@ -44,7 +44,7 @@ Build a Docker image from the Docker file
 Start the docker container from the built image
 
 ```
-    docker run -d -p <port to access contiainer process>:<port according to listen address> -e  LISTEN_ADDR=<port> <your image name>
+    docker run -d -p <port to access contiainer process>:<port according to listen address> -e  LISTEN_ADDR=<> <your image name>
 ```
 
 ## latest release: 
